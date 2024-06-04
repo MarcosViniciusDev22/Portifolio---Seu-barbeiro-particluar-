@@ -1,0 +1,296 @@
+:root{
+    --text- : #121212
+    --border: #121212 
+    --background-destaque: #ffffff
+    --background: #F8F5EF
+    --btn: #DEC7A6
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Barlow", sans-serif;
+}
+
+body{
+    background-color: #f8f5ef;
+}
+
+.main-box{
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    text-align: center;
+    max-width: 1920px;
+    height: 680px;
+    z-index: -2;
+}
+
+/*header*/
+
+.header{
+    width: 100%;
+    height: 80%;
+    display: flex;
+    align-items:center;
+    justify-content:flex-end;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.header::before{
+    content: '';
+    position:absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 550px;
+    background-image: url(./img/Photo/pexels-photo-3998397.jpeg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: -1;
+}
+
+.title-header{
+    font-size: 40px;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+}
+
+.sub-title-header{
+    color: #ffffff;
+    font-family: "Barlow";
+    font-size: 15px;
+    font-weight:normal;
+}
+
+.btns{
+    display: flex;
+    gap: 70px;
+}
+
+.btn-geral{
+    width: 140px;
+    height: 50px;
+    border: none;
+    background: #DEC7A6;
+    font-weight: 800;
+}
+
+.btn-transparente{
+    width: 140px;
+    height: 45px;
+    border: 2px solid #ffffff;
+    background: transparent;
+    color: #ffffff;
+    font-weight: 800;
+}
+
+.infos{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 200px;
+    background-color: #ffffff;
+    width: 1240px;
+    height: 150px;
+    border: 1px solid #121212;
+    margin-top: 70px;
+}
+
+.info{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-weight: 800;
+    gap: 6px;
+}
+
+.info .line{
+    width: 60px;
+    height: 4px;
+    background-color: #DEC7A6;
+}
+
+.info .text-assunto{
+    font-weight: 600;
+}
+
+/*porque escolher um barbeiro particular*/
+
+.why{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.why-left{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+.why-left .border{
+    border: 1px solid #121212;
+    padding: 15px;
+    text-align: left;
+    width: 500px;
+    height: 400px;
+    margin-left: 150px;
+}
+
+.title{
+    font-size: 35px;
+}
+
+.text{
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.why-right{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+.why-right .img img{
+    width: 400px;
+    height: 500px;
+    box-shadow: 5px 5px 20px #9b9b9b;
+}
+
+.info-why{
+    display: flex;
+    align-items: center;
+    gap: 130px;
+    height: 100px;
+    text-align: left;
+    padding-bottom: px;
+}
+
+.info-why span{
+    color: #DEC7A6;
+}
+
+.info-text-why{
+    font-weight: 800;
+    font-size: 40px;
+}
+
+.text-assunto{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+/*nossos servicos*/
+
+.sobre-servicos{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    gap: 50px;
+}
+
+.border{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.border-servicos{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    border: 1px solid #121212;
+    padding: 20px;
+    margin: 50px;
+    text-align: start;
+}
+
+.btns{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.border .title{
+    padding-bottom: 15px;
+}
+
+.servicos-gerais{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: flex-start;
+    justify-content: center;
+    margin: 50px;
+    padding: 30px;
+    width: auto;
+    height: auto;
+    background-color: #ffffff;
+    box-shadow: 2px 2px 20px #a8a8a8;
+}
+
+.especificacao-servicos{
+    width: auto;
+    height: auto;
+    display: flex;
+    padding: 20px;
+    gap: 20px;
+}
+
+.especificacao-servicos .icon img{
+    width: 45px;
+}
+
+.info-service{
+    width: auto;
+    height: auto;
+    align-items: flex-start;
+    justify-content: flex-start;
+    text-align: left;
+}
+
+.info-service .info-text{
+    font-size: 17px;
+    padding-bottom: 15px;
+    text-transform: uppercase;
+}
+
+.info-service .text{
+    font-size: 15px;
+}
+
+/*alteracoes temporarias*/
+
+.info img{
+    width: 35px;
+}
+
+.img img{
+    width: 100px;
+    height: 100px;
+}
+
+
+.sobre-mim img{
+    width: 100px;
+    height: 100px;
+}
+
+.agendamento img{
+    width: 100px;
+    height: 100px;
+}
