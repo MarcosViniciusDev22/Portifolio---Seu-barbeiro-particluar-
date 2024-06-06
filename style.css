@@ -14,18 +14,47 @@
 }
 
 body{
+    width: 100%;
+    height: 100vh;
     background-color: #f8f5ef;
 }
 
 .main-box{
-    display: flex;
+    display: inline-block;
     align-items:center;
     justify-content: center;
     text-align: center;
-    max-width: 1920px;
-    height: 680px;
+    width: 100vw;
+    height: 100vh;
     z-index: -2;
 }
+
+/*header top*/
+
+.header-top{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 50px;
+    background-color: #f8f5ef;
+}
+
+.header-top .nav-list{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    list-style: none;
+}
+
+.header-top .nav-list .list{
+    text-decoration: none;
+    color: #121212;
+    text-transform: uppercase;
+}
+
+
 
 /*header*/
 
@@ -87,6 +116,13 @@ body{
     background: transparent;
     color: #ffffff;
     font-weight: 800;
+    transition: 0.5s ease;
+    box-shadow: 2px 2px 20px #a8a8a8;
+    cursor: pointer;
+}
+
+.btn-transparente:hover{
+    transform: scale(1.2, 1.2);
 }
 
 .infos{
@@ -199,10 +235,9 @@ body{
     justify-content: center;
     width: 100vw;
     height: 100vh;
-    gap: 50px;
 }
 
-.border{
+.sobre-servicos .border{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -216,7 +251,7 @@ body{
     flex-direction: column;
     border: 1px solid #121212;
     padding: 20px;
-    margin: 50px;
+    margin: 20px;
     text-align: start;
 }
 
@@ -271,6 +306,144 @@ body{
 
 .info-service .text{
     font-size: 15px;
+}
+
+.btn-geral{
+    box-shadow: 2px 2px 20px #a8a8a8;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+
+.btn-geral:hover{
+    transform: scale(1.2, 1.2);
+}
+
+/*porque nos*/
+
+.porque-nos{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 50px;
+}
+
+.porque-nos .title{
+    margin-bottom: 30px;
+}
+
+.porque-nos .info-text, .title{
+    text-transform: uppercase;
+}
+
+.porque-nos .infos{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    width: 80%;
+    height: auto;
+    margin-top: 30px;
+    background: transparent;
+    border: none;
+}
+
+.porque-nos .info .text{
+    font-size: 20px;
+    width: 250px;
+}
+
+/*sobre mim*/
+
+.sobre-mim{
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.sobre-mim .marcosvinicius{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    background-color: transparent;
+    width: 600px;
+    height: 350px;
+    padding: 20px;
+    border: 2px solid #DEC7A6;
+    margin: 30px;
+}
+
+.sobre-mim .marcosvinicius .efeito-marcos{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.sobre-mim .marcosvinicius .img-marcos img{
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+}
+
+.sobre-mim .marcosvinicius .title{
+    font-size: 20px;
+}
+
+.sobre-marcos .stars{
+    padding-bottom: 20px;
+    text-align: left;
+}
+
+.marcosvinicius .stars img{
+    width: 20px;
+    height: 20px;
+}
+
+.rede-social{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+    padding: 35px;
+    width: 360px;
+    height: 310px;
+    margin: 30px;
+    background-color: #DEC7A6;
+}
+
+.rede-social .instagram-img img{
+    width: 70px;
+    height: 70px;
+}
+
+.rede-social::before{
+    content: "";
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 350px;
+    height: 300px;
+    border: 2px solid #121212;
+    z-index: -1;
+}
+
+/*fotos cortes*/ 
+
+.fotos-corte{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.fotos-corte img{
+    width: 300px;
+    height: 300px;
 }
 
 /*alteracoes temporarias*/
