@@ -15,32 +15,22 @@
         href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
     <title>Seu Barbeiro particular</title>
+</head>
 <body>
     <main>
         <section class="main-box">
-            <div class="agendamento">
-                <img src="./img/Photo/pexels-photo-5568407.jpeg" alt="">
-                <div class="contato">
-                    <div class="title">
-                        <h2>Marque um agendamento</h2>
-                    </div>
-                    <div class="phone">
-                        <div class="telefone-icon"><img src="./img/icons/telefone.png" alt=""></div>
-                        <div class="sub-title">Ligue para nos</div>
-                        <div class="text">(31) 9 8493-0948</div>
-                    </div>
-                    <div class="email">
-                        <div class="email-icon"><img src="./img/icons/o-email.png" alt=""></div>
-                        <div class="sub-title">Nos mande um email</div>
-                        <div class="text">Mvan1674@gmail.com</div>
-                    </div>
-                </div>
-                <div class="caixa-de-mensagem">
-                    <label for=""></label>
-                    <input type="text">
-                </div>
+            <div class="formulario">
+                <form action="https://formsubmit.co/ajax/mvan1674@gmail.com" method="post">
+                    <label for="nome">Nome</label>
+                    <input type="text" name="nome" id="nome" required>
+                    <label for="email">E-mail</label>
+                    <input type="email" name="email" id="email" required>
+                    <label for="mensagem">Mensagem</label>
+                    <textarea name="mensagem" id="mensagem" required></textarea>
+                </form>
             </div>
         </section>
     </main>
 </body>
+
 </html>
