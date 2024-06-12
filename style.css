@@ -97,6 +97,7 @@ body{
     color: #ffffff;
     display: flex;
     flex-direction: column;
+    text-transform: uppercase;
 }
 
 .sub-title-header{
@@ -293,8 +294,8 @@ body{
 .servicos-gerais{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    justify-self: flex-start;
     align-items: flex-start;
-    justify-content: center;
     margin: 50px;
     padding: 30px;
     width: auto;
@@ -303,7 +304,9 @@ body{
     box-shadow: 2px 2px 20px #a8a8a8;
 }
 
-.especificacao-servicos{
+
+.especificacao-servicos,
+.especificacao-servicos-2{
     width: auto;
     height: auto;
     display: flex;
@@ -316,12 +319,25 @@ body{
     height: 45px;
 }
 
+.especificacao-servicos-2 .icon-2 img{
+    width: 45px;
+    height: 45px;
+}
+
 .info-service{
     width: auto;
     height: auto;
     align-items: flex-start;
     justify-content: flex-start;
     text-align: left;
+}
+
+.especificacao-servicos-2 .info-service{
+    width: auto;
+    height: auto;
+    align-items: flex-start;
+    justify-content: flex-start;
+    text-align: right;
 }
 
 .info-service .info-text{
@@ -692,3 +708,192 @@ a {
     width: 100px;
     height: 100px;
 }
+
+@media only screen and (max-width: 500px){
+    .title-header{
+        font-size: 25px;
+    }
+    .sub-title-header{
+        font-size: 15px;
+    }
+    .btn-geral{
+        width: 100px;
+        height: 50px;
+        font-size: 10px;
+    }
+    .btn-transparente{
+        width: 100px;
+        height: 50px;
+        font-size: 10px
+    }
+    .infos{
+        width:95%;
+        max-height: 20%;
+        gap: 30px;
+        padding: 5px;
+    }
+    .info{
+        
+    }
+    .info-text{
+        font-size: 10px;
+    }
+    .text-assunto{
+        font-size: 10px;
+    }
+    .info img{
+        width: 15px;
+        height: 15px;
+    }
+
+    .title{
+        font-size: 15px;
+    }
+    .text{
+        font-size: 10px;
+    }
+    .why{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .why-left{
+        margin-left: 0;
+    }
+    .why-left .border{
+        border: 1px solid #121212;
+        padding: 15px;
+        margin: 5px;
+        text-align: left;
+        width: 100vw;
+        height: auto;
+    }
+    .why-right .img img{
+        width: 250px;
+        height: 250px;
+    }
+
+
+    .sobre-servicos{
+        flex-direction: column;
+    }
+
+    .info-text-why{
+        font-size: 25px;
+    }
+
+    .especificacao-servicos .icon img{
+        width: 30px;
+        height: 30px;
+    }
+
+    .especificacao-servicos-2 .icon-2 img{
+        width: 30px;
+        height: 30px;
+    }
+
+    .info-service .info-text{
+        font-size: 10px;
+        padding-bottom: 7px;
+        text-transform: uppercase;
+    }
+    
+    .info-service .text{
+        font-size: 10px;
+    }
+    
+
+    .servicos-gerais{
+        display: flex;
+        align-items: center;
+        justify-self: center;
+        flex-direction: column;
+        margin: 50px;
+        padding: 30px;
+        width: auto;
+        height: auto;
+        background-color: #ffffff;
+        box-shadow: 2px 2px 20px #a8a8a8;
+    }
+
+
+
+    .item{
+        position: absolute;
+        width: 200px;
+        height: 320px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: justify;
+        flex-direction: column;
+        background-color: #fff;
+        border-radius: 10px;
+        padding: 20px;
+        transition: 0.5s;
+        left: calc(50% - 110px);
+        top: 0;
+        gap: 10px;
+        text-align: center;
+    }
+
+}
+    .item img{
+        width: 50px;
+        height: 50px;
+    }
+
+    .slider{
+        position: relative;
+        width: 100%;
+        height: 370px;
+        overflow: hidden;
+    }
+
+    .item{
+        position: absolute;
+        width: 250px;
+        height: 320px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: justify;
+        flex-direction: column;
+        background-color: #fff;
+        border-radius: 10px;
+        padding: 20px;
+        transition: 0.5s;
+        left: calc(50% - 110px);
+        top: 0;
+        gap: 10px;
+        text-align: center;
+    }
+
+    .item .info-text{
+        font-size: 17px;
+        text-transform: uppercase;
+    }
+
+    .item .line{
+        width: 60px;
+        height: 4px;
+        background-color: #DEC7A6;
+    }
+
+    #next, #prev{
+        position: absolute;
+        top: 40%;
+        color: #121212;
+        background-color: #121212;
+        background-color: transparent;
+        border: none;
+        font-size: xxx-large;
+        font-family: monospace;
+        font-weight: bold;
+        left: 400px;
+    }
+
+    #next{
+        left: unset;
+        right: 400px;
+    }
