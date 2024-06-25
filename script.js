@@ -3,6 +3,22 @@ let next = document.getElementById('next');
 let prev = document.getElementById('prev');
 const menuLinks = document.querySelectorAll('.nav-list a[href^="#"]');
 
+const hamburguer = document.querySelector(".hamburguer");
+const list = document.querySelectorAll("li")
+const nav = document.querySelector(".nav");
+
+hamburguer.addEventListener("click", () => nav.classList.toggle("active"));
+function closelist(){
+  for (let i = 0; i < list.length; i++) {
+    list[i].addEventListener("click", () => {
+      nav.classList.toggle("active");
+    });
+  }
+}
+
+closelist();
+
+
 function getDistanceFromTheTop(element) {
   const id = element.getAttribute("href");
   return document.querySelector(id).offsetTop;

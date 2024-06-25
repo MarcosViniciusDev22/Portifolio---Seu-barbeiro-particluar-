@@ -20,20 +20,17 @@
 
 <body>
     <main>
-        <header class="header-top">
-            <div class="nav-list">
-                <div class="nav-animation1">
-                    <li><a href="#seu-barbeiro" class="list">Seu barbeiro</a></li>
-                    <li><a href="#nossos-servicos" class="list">Nossos servicos</a></li>
-                </div>
-                <div class="nav-animation2">
-                    <li><a href="#barbeiro-destaque" class="list">Barbeiro Destaque</a></li>
-                    <li><a href="#contato" class="list">Contato</a></li>
-                </div>
-
-            </div>
-        </header>
-        <section class="main-box">
+        <nav class="nav">
+            <ul class="nav-list">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#seu-barbeiro">Seu barbeiro</a></li>
+                <li><a href="#nossos-servicos">Nossos serviços</a></li>
+                <li><a href="#barbeiro-destaque">Barbeiro destaque</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+            <button class="hamburguer"></button>
+        </nav>
+        <section class="main-box" id="inicio">
             <div class="header">
                 <div class="header-container">
                     <div class="title-header">
@@ -43,8 +40,8 @@
                         <h4>Conforto e acessibilidade para voce</h4>
                     </div>
                     <div class="btns">
-                        <button class="btn-geral">SOBRE MIM</button>
-                        <button class="btn-transparente">SERVIÇOS</button>
+                        <a href="https://api.whatsapp.com/send?phone=5531984930948&text=Quero%20agendar%20um%20corte%21"><button class="btn-geral">Marque um horario</button></a>
+                        <a href="#nossos-servicos"><button class="btn-transparente">SERVIÇOS</button></a>
                     </div>
                 </div>
                 <div class="infos">
@@ -52,19 +49,19 @@
                         <div class="icon">
                             <img src="./img/icons/mapas-e-bandeiras (1).png" alt="Localizacao">
                         </div>
-                        <span class="info-text">ENDERECO</span>
+                        <span class="info-text">ENDEREçO</span>
                         <div class="line"></div>
-                        <p class="text-assunto">ONDE VOCE<br>ESTIVER</p>
+                        <p class="text-assunto">ONDE VOCÊ<br>ESTIVER</p>
                     </div>
 
-                    <div class="info">
-                        <div class="icon">
-                            <img src="./img/icons/telefone.png">
+                        <div class="info">
+                            <div class="icon">
+                                <img src="./img/icons/telefone.png">
+                            </div>
+                            <span class="info-text">TELEFONE</span>
+                            <div class="line"></div>
+                            <a href="https://api.whatsapp.com/send?phone=5531984930948&text=Quero%20agendar%20um%20corte%21"><p class="text-assunto">(31) 9 8493-0948</p></a>
                         </div>
-                        <span class="info-text">TELEFONE</span>
-                        <div class="line"></div>
-                        <p class="text-assunto">(31) 9 8493-0948</p>
-                    </div>
 
                     <div class="info">
                         <div class="icon">
@@ -113,6 +110,22 @@
 
         <section class="main-box" id="nossos-servicos">
             <div class="sobre-servicos">
+                <div class="border">
+                    <div class="border-servicos">
+                        <div class="title">
+                            <h1>Nossos servicos</h1>
+                        </div>
+                        <div class="text">
+                            <p>Um servico totalmente profissional e personalizado para o seu gosto e personalidade.
+                                realizado qualquer servico do catalago com exelencia e exatidao, voce sentira como se
+                                estivesse em uma barbearia, mas com um lado bem melhor, tudo isso em sua casa.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="btns">
+                        <a href="https://api.whatsapp.com/send?phone=5531984930948&text=Quero%20agendar%20um%20corte%21"><button class="btn-geral-servicos">Marque um horario</button></a>
+                    </div>
+                </div>
                 <div class="servicos-gerais">
                     <div class="especificacao-servicos">
                         <div class="icon">
@@ -169,22 +182,6 @@
                         <div class="icon-2">
                             <img src="./img/icons/barba.png" alt="Consultoria visagista">
                         </div>
-                    </div>
-                </div>
-                <div class="border">
-                    <div class="border-servicos">
-                        <div class="title">
-                            <h1>Nossos servicos</h1>
-                        </div>
-                        <div class="text">
-                            <p>Um servico totalmente profissional e personalizado para o seu gosto e personalidade.
-                                realizado qualquer servico do catalago com exelencia e exatidao, voce sentira como se
-                                estivesse em uma barbearia, mas com um lado bem melhor, tudo isso em sua casa.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="btns">
-                        <button class="btn-geral-servicos">Marque um horario</button>
                     </div>
                 </div>
             </div>
@@ -277,13 +274,13 @@
                                     </p>
                                 </div>
                                 <div class="rede-social-marcos">
-                                    <a href=""><img src="./img/icons/instagram.png" alt=""></a>
+                                    <a href="https://www.instagram.com/oviniciusbarber/"><img src="./img/icons/instagram.png" alt=""></a>
                                 </div>
                         </div>
                     </div>
                     <div class="rede-social">
                         <div class="instagram-img">
-                            <img src="./img/icons/instagram.png" alt="">
+                            <a href="https://www.instagram.com/oviniciusbarber/"><img src="./img/icons/instagram.png" alt=""></a>
                         </div>
                     </div>
                 </div>
